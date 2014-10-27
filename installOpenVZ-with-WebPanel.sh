@@ -11,7 +11,7 @@ rpm --import http://ftp.openvz.org/RPM-GPG-Key-OpenVZ
 echo 'Installing OpenVZ Kernel'
 yum install -y vzkernel.x86_64
 echo 'Installing additional tools'
-yum install -y vzctl vzquota
+yum install -y vzctl vzquota ploop
 echo 'Changing around some config files..'
 sed -i 's/kernel.sysrq = 0/kernel.sysrq = 1/g' /etc/sysctl.conf
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/sysctl.conf
