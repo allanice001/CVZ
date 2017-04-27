@@ -31,7 +31,7 @@ wget http://download.openvz.org/template/precreated/centos-6-x86_64.tar.gz
 /bin/cp /etc/rc.local /tmp/rc.local
 cat > /etc/rc.local << EOF
 #!/bin/bash
-wget -O - http://ovz-web-panel.googlecode.com/svn/installer/ai.sh | sh
+wget -O - https://raw.githubusercontent.com/sibprogrammer/owp/master/installer/ai.sh | sh
 modprobe vzcpt
 modprobe nf_conntrack_ftp
 modprobe ip_nat_ftp
